@@ -5,6 +5,8 @@ const PORT = 3001
 
 app.use(express.json(), cors())
 
+app.use(express.static('./product_images'));
+
 app.use('/users', require('./routes/users'));
 app.use('/products', require('./routes/products'));
 app.use('/categories', require('./routes/categories'));
