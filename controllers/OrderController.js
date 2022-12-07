@@ -5,10 +5,8 @@ const OrderController = {
   async createOrder(req, res) {
     try {
       const order = await Order.create({
-        date: req.body.date,
-        user_id: req.body.user_id,
+        user_id: req.user.id
       });
-
       for (const product of req.body.products) {
         Order_detail.create({
           order_id: order.id,

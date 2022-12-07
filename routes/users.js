@@ -22,10 +22,10 @@ router.put("/updateUserById/id/:id", UserController.updateUserById);
 router.delete("/deleteUserById/id/:id", UserController.deleteUserById);
 router.post("/login", UserController.login);
 router.delete("/logout", authentication, UserController.logout);
-router.post(
-  "/getUserWithOrderById",
+router.get(
+  "/getUserWithOrders",
   authentication,
-  UserController.getUserWithOrderById
+  UserController.getUserWithOrders
 );
 
 module.exports = router;

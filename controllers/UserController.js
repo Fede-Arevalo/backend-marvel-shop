@@ -75,7 +75,7 @@ const UserController = {
     }
   },
 
-  async getUserWithOrderById(req, res) {
+  async getUserWithOrders(req, res) {
     try {
       const users = await User.findOne({
         attributes: { exclude: ["password", "role", "createdAt", "updatedAt"] },
