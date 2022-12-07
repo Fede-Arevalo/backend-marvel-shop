@@ -28,13 +28,13 @@ const UserController = {
       });
       if (!user) {
         return res
-          .status(200)
+          .status(400)
           .send({ ok: false, message: "Username or password incorrect" });
       }
       const isMatch = bcrypt.compareSync(req.body.password, user.password);
       if (!isMatch) {
         return res
-          .status(200)
+          .status(400)
           .send({ ok: false, message: "Username or password incorrect" });
       }
       let token = jwt.sign({ id: user.id }, jwt_secret);
@@ -75,7 +75,7 @@ const UserController = {
     }
   },
 
-  async getUserWithOrderById(req, res) {
+  async getUserWithOrders(req, res) {
     try {
       const users = await User.findOne({
         attributes: { exclude: ["password", "role", "createdAt", "updatedAt"] },

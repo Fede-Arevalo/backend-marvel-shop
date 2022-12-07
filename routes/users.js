@@ -25,7 +25,7 @@ router.delete("/logout", authentication, UserController.logout);
 router.get(
   "/getUserWithOrderById",
   authentication,
-  UserController.getUserWithOrderById
+  UserController.getUserWithOrders
 );
 
 module.exports = router;
