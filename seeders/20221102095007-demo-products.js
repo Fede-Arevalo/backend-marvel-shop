@@ -1,83 +1,90 @@
-'use strict';
+"use strict";
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    return queryInterface.bulkInsert('Products', [
+    return queryInterface.bulkInsert("Products", [
       {
-        name: 'NZXT Function Mini TKL Mechanical Keyboard',
-        price: 99.99,
-        description: 'MECHANICAL KEYBOARD: The NZXT Function mechanical keyboard family combines a durable aluminum top plate with smooth, linear RGB switches, making it the perfect companion for PC gaming',
-        img_product: 'default/seeder-product1.jpg',
+        name: "Thanos Infinity Stones Ring",
+        price: 15.99,
+        description:
+          "Available now and also on sale the Thanos Infinity Stone ring is made with high-quality zinc alloy and also great quality colours.",
+        img_product: "default/seeder-product1.jpg",
         category_id: 1,
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
       },
       {
-        name: 'MSI Ventus GeForce RTX 3080 12GB GDDR6X PCI Express 4.0',
-        price: 789.99,
-        description: '12GB 384-Bit GDDR6X - Boost Clock 1740 MHz - 1 x HDMI 2.1 3 x DisplayPort 1.4a - 8960 CUDA Cores - PCI Express 4.0',
-        img_product: 'default/seeder-product2.jpg',
+        name: "Iron Man Mark 46 Half Bust",
+        price: 210.75,
+        description:
+          "It is a collectible bust. With its all weight of 3kg and 35cm high this Iron Man half bust is also an iconic product.",
+        img_product: "default/seeder-product2.jpg",
         category_id: 2,
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
       },
       {
-        name: 'Xbox Elite Wireless Series 2 Controller Black',
-        price: 179.99,
-        description: 'Use Xbox Wireless, Bluetooth, or the included USB-C cable to play across your Xbox One and Windows 10 devices',
-        img_product: 'default/seeder-product3.jpg',
+        name: "Thor Hammer Mjolnir",
+        price: 330.75,
+        description:
+          "Full metal thor hammer movie replica - marvelofficial.com. With his total weight of 5.8 kg, this full metal Thor hammer is the closer prop replica that you can find. 1:1 scale life-size of the original Thor hammer used in the movie.",
+        img_product: "default/seeder-product3.jpg",
         category_id: 3,
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
       },
       {
-        name: 'NETGEAR Nighthawk Pro Gaming 6-Stream WiFi 6 Router AX5400 (XR1000)',
-        price: 369.99,
-        description: 'Powered by DumaOS 3.0: Reduce ping rates up to 93% and enjoy faster, lag-free online gaming and smoother streaming with this Router OS built especially for gamers',
-        img_product: 'default/seeder-product4.jpg',
+        name: "Marvel Captain America Mask",
+        price: 59.99,
+        description:
+          "Captain America wearable mask prop replica and scale 1:1 life size",
+        img_product: "default/seeder-product4.jpg",
         category_id: 4,
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
       },
       {
-        name: 'Microsoft Windows 11 Pro 64-bit, DVD - OEM',
-        price: 159.98,
-        description: 'Windows 11 has easy-to-use tools that can help you optimize your screen space and maximize your productivity',
-        img_product: 'default/seeder-product5.jpg',
+        name: "Apple AirPods Pro Case Marvel Characters",
+        price: 14.75,
+        description:
+          "Light weight AirPods Pro Case Marvel Characters. Also high quality, non-toxic and environment friendly silicone material.",
+        img_product: "default/seeder-product5.jpg",
         category_id: 5,
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
       },
       {
-        name: 'ASUS VivoBook Pro 16X OLED Laptop, 16" WQUXGA',
-        price: 999.99,
-        description: '16" WQUXGA 16:10 Display, Intel Core i7-11370H CPU, NVIDIA GeForce RTX 3050, 16GB RAM, 1TB SSD, Windows 11 Pro, DialPad, Comet Grey, N7600PC-NB74',
-        img_product: 'default/seeder-product6.jpg',
+        name: "Marvel Logo White T-Shirt",
+        price: 23.75,
+        description: "100% cotton and high-quality Marvel logo print.",
+        img_product: "default/seeder-product6.jpg",
         category_id: 6,
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
       },
       {
-        name: 'MSI PRO PRO X670-PA',
-        price: 289.99,
-        description: 'WIFI DDR5 AM5 AMD Ryzen™ 7000 Series SATA 6Gb/s ATX Motherboards, Wi-Fi 6E, 2.5G Network Solution, Frozr AI Cooling',
-        img_product: 'default/seeder-product7.jpg',
+        name: "Marvel Funko POP Iron Spider",
+        price: 29.99,
+        description:
+          "Cute and also funny this Funko POP Iron Spider will take the Avengers: Infinity War power wherever you will place it.",
+        img_product: "default/seeder-product7.jpg",
         category_id: 2,
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
       },
       {
-        name: 'Thrustmaster T248 Racing Wheel (PS5, PS4 and PC)',
-        price: 399.99,
-        description: "T248: Thrustmaster's hybrid next generation of racing simulation for PS5/PS4 and PC",
-        img_product: 'default/seeder-product8.jpg',
+        name: "Avengers A Logo Keychain",
+        price: 12.75,
+        description:
+          "All our Marvel Keychain are made with 100% high-quality, resistant and no-toxic material.",
+        img_product: "default/seeder-product8.jpg",
         category_id: 3,
         createdAt: new Date(),
-        updatedAt: new Date()
-      }
-    ])
+        updatedAt: new Date(),
+      },
+    ]);
   },
 
-  async down(queryInterface, Sequelize) {}
+  async down(queryInterface, Sequelize) {},
 };

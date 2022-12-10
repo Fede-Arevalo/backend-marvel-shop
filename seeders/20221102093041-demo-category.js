@@ -5,32 +5,32 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     return queryInterface.bulkInsert('Categories', [
       {
-        name: 'Computer Peripherals',
+        name: 'Accesories',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        name: 'Components & Storage',
+        name: 'Action Figures',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        name: 'Gaming',
+        name: 'Collectible',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        name: 'Networking',
+        name: 'Cosplay Costumes',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        name: 'Software & Services',
+        name: 'Electricals & Tech',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        name: 'Computer System',
+        name: 'Marvel Clothing',
         createdAt: new Date(),
         updatedAt: new Date()
       }

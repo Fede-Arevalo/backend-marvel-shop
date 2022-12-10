@@ -1,11 +1,11 @@
-'use strict';
+"use strict";
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  async up(queryInterface, Sequelize) {
     return queryInterface.bulkInsert("Reviews", [
       {
-        content: "Good keyboard quality, although key noise can be annoying",
+        content: "Very well made, fit perfectly!",
         rating: 4,
         product_id: 1,
         user_id: 2,
@@ -13,7 +13,8 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        content: "I was looking forward to having this graphics card, now I can play the games in ultra quality. Happy with the purchase!",
+        content:
+          "I'm super satisfied with this product, perfect conditions and excellent package! highly recommended, it's a 5 stars for sure!",
         rating: 5,
         product_id: 2,
         user_id: 2,
@@ -21,15 +22,16 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        content: "I bought this laptop 2 weeks ago. I use it to teach my programming classes and it works great",
-        rating: 4,
+        content:
+          "I bought this metal Thor hammer for my boyfriend's birthday and he is very happy about this product. The hammer is made out of real metal and it's quite heavy. Arrived after 28 days. Thank you guys!",
+        rating: 5,
         product_id: 6,
         user_id: 3,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        content: "Controller works fine but it's too expensive",
+        content: "Good.",
         rating: 3,
         product_id: 3,
         user_id: 4,
@@ -37,7 +39,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        content: "160 dollars to be able to have Windows 11 is too expensive, I hope they lower the price soon",
+        content: "Very Good!",
         rating: 2,
         product_id: 5,
         user_id: 4,
@@ -45,7 +47,8 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        content: "With this router I no longer have internet problems while playing online. It's expensive, but I recommend it",
+        content:
+          "Good quality marvel tee. Fit perfectly! Love it!",
         rating: 4,
         product_id: 4,
         user_id: 5,
@@ -53,7 +56,8 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        content: "The motherboard arrived in bad condition. I have had to return it",
+        content:
+          "I bought one and got it today,it takes about a month to get your product how ever the quality is quite nice.",
         rating: 1,
         product_id: 7,
         user_id: 6,
@@ -61,7 +65,8 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        content: "I was killed in a game while using this controller. It must be a problem with the controller, not mine. I can't fail",
+        content:
+          "Good.",
         rating: 1,
         product_id: 3,
         user_id: 5,
@@ -71,6 +76,5 @@ module.exports = {
     ]);
   },
 
-  async down (queryInterface, Sequelize) {
-  }
+  async down(queryInterface, Sequelize) {},
 };
